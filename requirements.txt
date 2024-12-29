@@ -1,0 +1,7 @@
+pip install flask
+pip install gunicorn
+pip install fastapi
+pip install uvicorn
+pip install gunicorn
+pip install requests
+pip install PyPDF2
