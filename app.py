@@ -3,6 +3,14 @@ from pywebio.output import put_html, put_markdown, put_text, put_buttons, put_fi
 from pywebio import start_server
 from PyPDF2 import PdfMerger, PdfReader
 import os
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return "Hello, World!"
+
 
 def merge_pdf_files():
     """
